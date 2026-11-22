@@ -2,6 +2,13 @@
 
 Platform-only release notes from earlier versions are omitted; other changes relevant to the Kit are retained.
 
+## 0.8.0b73 - 2026-11-22
+
+- Build the CALVIN worker runtime with CPython 3.11.15 and pin compatible evaluation dependencies.
+- Coalesce queued Policy action requests across episodes when the Policy opts into batching.
+  StarVLA accepts a per-snapshot batch cap and predicts the entire batch in one call.
+- Document the full CALVIN StarVLA comparison on a single RTX 4090.
+
 ## 0.8.0b72 - 2026-11-22
 
 - Step RoboCasa365's five native simulator slots on five threads of the Worker. MuJoCo releases the
