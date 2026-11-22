@@ -4,9 +4,9 @@ Platform-only release notes from earlier versions are omitted; other changes rel
 
 ## 0.8.0b73 - 2026-11-22
 
-- Build the CALVIN worker runtime with CPython 3.11.15 and pin compatible evaluation dependencies.
-- Coalesce queued Policy action requests across episodes when the Policy opts into batching.
-  StarVLA accepts a per-snapshot batch cap and predicts the entire batch in one call.
+- Build the CALVIN worker runtime with CPython 3.11.15 and hash-pin compatible evaluation dependencies.
+- Allow Policies to opt into coalescing queued actions from distinct episodes. The CALVIN StarVLA
+  example seeds each QwenGR00T action prediction by episode and step.
 - Document the full CALVIN StarVLA comparison on a single RTX 4090.
 
 ## 0.8.0b72 - 2026-11-22
